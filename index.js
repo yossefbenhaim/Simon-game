@@ -5,6 +5,16 @@ var start = false;
 var level = 0
 
 
+$(".white").click(function(){
+    if(!start){
+    $("h1").text("level " + level);
+    nextSequence();
+
+    start = true;
+    }    
+});
+
+
 $(document).keypress(function(){
     if(!start){
     $("h1").text("level " + level);
